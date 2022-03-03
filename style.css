@@ -2,20 +2,25 @@ body {
     background-color: rgb(33, 33, 33);
 }
 
+strong {
+    color: #666
+}
+
+li>p>a {
+    color: #555;
+}
+
+h3 {
+    margin-top: 0.3em;
+}
+
 div.top {
-    top: 0px;
-    left: 0px;
-    width: 100%;
     background: pink;
-    /*position: -webkit-sticky;
-    position: sticky;
-    */
 }
 
 div.top,
 div.side {
     text-align: center;
-    justify-content: center;
 }
 
 div.side {
@@ -24,25 +29,26 @@ div.side {
 }
 
 h1.logo,
-ul.menu,
-ul.menu li,
-ul.week,
-ul.week>li {
+ul {
     margin-top: 0%;
     margin-bottom: 0%;
+}
+
+div.content,
+ul,
+li {
+    padding: 0.8em;
 }
 
 ul.menu,
 ul.menu li {
     display: inline;
     font-size: 1.1em;
-    padding: .8em;
 }
 
 ul.week,
 ul.week>li,
 div.content {
-    padding: 0.8em;
     padding-bottom: 0;
     padding-top: 0;
 }
@@ -52,29 +58,16 @@ ul.week>li {
     display: inline-block;
 }
 
+ul.week>li:hover {
+    background-color: rgba(255, 255, 255, 0.055);
+}
+
 div.content {
     border: solid rgba(255, 255, 255, 0.055);
 }
 
 img.album {
     padding-right: .8em;
-}
-
-strong {
-    color: #666
-}
-
-li>p>a {
-    color: #555;
-}
-
-ul.week>li:hover {
-    background-color: rgba(255, 255, 255, 0.055);
-}
-
-h3 {
-    margin: 0;
-    margin-top: 0.3em;
 }
 
 span.rating_good,
