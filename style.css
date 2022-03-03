@@ -1,207 +1,90 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-    background-image: url(../img/background.gif);
-    background-position: center;
-    background-color: #fdfcfc;
-    text-align: center;
-    font-size: 0.95em;
+    background-color: rgb(33, 33, 33);
 }
 
-
-/* unvisited link */
-
-a:link {
-    color: gray;
-}
-
-
-/* visited link */
-
-a:visited {
-    color: gray;
-}
-
-
-/* mouse over link */
-
-a:hover {
-    color: gainsboro;
-}
-
-
-/* selected link */
-
-a:active {
-    color: gray;
-}
-
-@media(max-width:600px) {
-    .content {
-        font-size: 1em;
-    }
-}
-
-#pages {
-    display: none;
-}
-
-.img {
-    text-align: center;
+div.top {
+    top: 0px;
+    left: 0px;
     width: 100%;
-}
-
-#loader {
-    display: none;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    text-align: left;
-}
-
-p.logo {
-    padding-top: 17px;
-    padding-bottom: 0px;
-}
-
-p.menu {
-    margin: 0px;
-    padding-top: 0px;
-    padding-bottom: 15px;
-}
-
-div.caption {
-    padding-top: 20px;
-}
-
-span.image-title {
-    padding-top: 35px;
-    font-weight: bolder;
-    font-size: 116%;
-    color: #B3B3B3;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-}
-
-div.image-desc {
-    margin: 11px;
-    line-height: normal;
-    padding-top: 2px;
-}
-
-span.record-title {
-    padding-top: 0px;
-    font-size: 116%;
-    padding-left: 3px;
-    padding-bottom: 2px;
-    font-style: italic;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    color: #B3B3B3;
-}
-
-div.publisher {
-    margin-top: -5px;
-    padding-bottom: 29px;
-    margin-bottom: 18 px;
-    font-size: 80%;
-    color: #B3B3B3;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-}
-
-.divider {
-    margin-top: 12px;
-    margin-bottom: 18px;
-    padding-bottom: 13px;
-    color: #ADADAD;
-    line-height: 1em;
-    font-style: italic;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    background-image: url(../img/hr.gif);
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-.divider-top {
-    color: #ADADAD;
-    margin-top: -9px;
-    line-height: 0.2em;
-    font-style: italic;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    background-image: url(../img/hr.gif);
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-div.mainmenu {
+    justify-content: center;
     text-align: center;
-    font-size: 100%;
-    font-weight: 550;
-    padding: 0;
-    /* Remove the default padding. */
-    margin-bottom: 19px;
-    line-height: 130%;
+    background: pink;
+    /*position: -webkit-sticky;
+    position: sticky;
+    */
 }
 
-div.mainmenu a:hover {
-    background: #EDEDED;
-    color: #A2A2A2;
+h1.logo {
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
-div.currentLink {
-    color: #646464;
-    background-color: #000000;
+ul.menu,
+ul.menu li {
+    font-size: 1.1em;
+    padding: .8em;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: inline;
 }
 
-div.mainmenu a {
-    text-decoration: none;
-    padding: 0 2px;
-    /* variable width */
-    color: #A2A2A2;
+div.side {
+    background-color: rgba(0, 0, 0, 0.192);
+    text-align: center;
+    justify-content: center;
+    max-height: 3.25em;
 }
 
-.info-update {
-    font-size: 100%;
-    font-weight: lighter;
+ul.week,
+ul.week>li {
+    display: inline-block;
+    padding: 0.8em;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+div.content {
+    padding: 0.8em;
+    padding-top: 0;
+    border: solid rgba(255, 255, 255, 0.055);
+}
+
+img.album {
+    padding-right: .8em;
+}
+
+strong {
+    color: #666
+}
+
+li>p>a {
     color: #555;
 }
 
-.info-title {
+ul.week>li:hover {
+    background-color: rgba(255, 255, 255, 0.055);
+}
+
+h3 {
+    margin: 0;
+    margin-top: 0.3em;
+}
+
+span.rating_good,
+span.rating_mid,
+span.rating_bad {
     font-weight: bold;
-    font-size: 100%;
-    line-height: 120%;
-    color: #999;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif
 }
 
-.info-title2 {
-    font-weight: bold;
-    font-size: 140%;
-    color: #999;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif
+span.rating_good {
+    color: rgb(48, 230, 48);
 }
 
-.info-client {
-    font-weight: bold;
-    line-height: 120%;
-    text-transform: uppercase;
+span.rating_mid {
+    color: rgb(230, 212, 48);
 }
 
-
-/*.info-line {}*/
-
-.info-coming-soon {
-    font-style: italic;
-    color: #464646;
-}
-
-.info-publisher {
-    color: #8f8f8f;
-}
-
-.impressumbox {
-    position: relative;
-    margin-top: 2px;
-    display: none;
+span.rating_bad {
+    color: rgb(230, 48, 48);
 }
