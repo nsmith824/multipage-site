@@ -6,47 +6,53 @@ div.top {
     top: 0px;
     left: 0px;
     width: 100%;
-    justify-content: center;
-    text-align: center;
     background: pink;
     /*position: -webkit-sticky;
     position: sticky;
     */
 }
 
-h1.logo {
+div.top,
+div.side {
+    text-align: center;
+    justify-content: center;
+}
+
+div.side {
+    background-color: rgba(0, 0, 0, 0.192);
+    max-height: 3.25em;
+}
+
+h1.logo,
+ul.menu,
+ul.menu li,
+ul.week,
+ul.week>li {
     margin-top: 0%;
     margin-bottom: 0%;
 }
 
 ul.menu,
 ul.menu li {
+    display: inline;
     font-size: 1.1em;
     padding: .8em;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    display: inline;
 }
 
-div.side {
-    background-color: rgba(0, 0, 0, 0.192);
-    text-align: center;
-    justify-content: center;
-    max-height: 3.25em;
+ul.week,
+ul.week>li,
+div.content {
+    padding: 0.8em;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 ul.week,
 ul.week>li {
     display: inline-block;
-    padding: 0.8em;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-top: 0;
 }
 
 div.content {
-    padding: 0.8em;
-    padding-top: 0;
     border: solid rgba(255, 255, 255, 0.055);
 }
 
