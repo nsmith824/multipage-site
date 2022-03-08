@@ -68,6 +68,8 @@ div.content {
 
 img.album {
     padding-right: .8em;
+    width: 25%;
+    float: left;
 }
 
 span.rating_good,
