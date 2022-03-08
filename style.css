@@ -1,3 +1,14 @@
+/*
+classes used:
+top = top bar, Home, Contact
+side = bar right below that. weeks 1-4
+logo = title of the page, Music of the Week
+content = meat of the page, albums + paragraphs and content
+img.album = album art on each page
+rating_good/mid/bad = color coded rating in the first line
+contact = special div, contact page only one setup as a flex box
+*/
+
 body {
     background-color: rgb(33, 33, 33);
 }
@@ -62,7 +73,8 @@ ul.week>li:hover {
     background-color: rgba(255, 255, 255, 0.055);
 }
 
-div.content {
+div.content,
+div.contact {
     border: solid rgba(255, 255, 255, 0.055);
 }
 
@@ -88,4 +100,17 @@ span.rating_mid {
 
 span.rating_bad {
     color: rgb(230, 48, 48);
+}
+
+div.contact {
+    display: flex;
+    justify-content: center;
+    line-height: 0em;
+    padding: 0.8em;
+}
+
+textarea,
+input {
+    background-color: rgb(51, 51, 51);
+    color: #666;
 }
